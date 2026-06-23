@@ -1,0 +1,13 @@
+  {
+    id: 17,
+    nome: "Caneca Batman - cavaleiro das trevas",
+    categoria: "Colecionáveis",
+    preco: 150.00,
+    precoOriginal: 200.00,
+    promocao: true,
+    desconto: 25,
+    emoji: "🦇",
+    descricao: "Caneca comemorativa da trilogia 'Batman - Cavaleiro das Trrevas'.",
+    estoque: 13,
+    selo: "PROMO RELÂMPAGO"
+  },

@@ -1,0 +1,96 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: var(--bg);
+}
+
+.login-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2rem 1.75rem;
+  width: 100%;
+  max-width: 360px;
+}
+
+.login-logo {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.login-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 1.1rem;
+}
+
+.login-hint-box {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  background: var(--surface-2);
+  border: 1px dashed var(--border-dk);
+  border-radius: var(--radius);
+  padding: 0.55rem 1rem;
+  font-size: 0.8rem;
+  color: var(--text-2);
+  margin-bottom: 1.25rem;
+}
+
+.login-form { display: flex; flex-direction: column; gap: 0.9rem; }
+
+.field { display: flex; flex-direction: column; gap: 0.3rem; }
+
+.field label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-2);
+}
+
+.field input {
+  padding: 0.6rem 0.8rem;
+  background: var(--surface);
+  border: 1px solid var(--border-dk);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-size: 0.92rem;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.field input::placeholder { color: var(--text-3); }
+.field input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(79,70,229,0.1);
+}
+
+.login-error {
+  font-size: 0.8rem;
+  color: var(--danger);
+  background: var(--danger-dim);
+  border: 1px solid #fecaca;
+  border-radius: var(--radius);
+  padding: 0.5rem 0.75rem;
+}
+
+.btn-login {
+  padding: 0.65rem;
+  background: var(--accent);
+  border: none;
+  border-radius: var(--radius);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.15s;
+  margin-top: 0.2rem;
+}
+.btn-login:hover:not(:disabled) { background: #4338ca; }
+.btn-login:disabled { opacity: 0.55; cursor: not-allowed; }
